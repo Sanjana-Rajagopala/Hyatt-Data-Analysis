@@ -12,12 +12,7 @@ The business goals of the project involves -
 ### Prerequisites and Getting Started
 
 Install RStudio 
-Download the required Data files
-
-## Deployment
-Place the downloaded data files in a convinient folder path.
-Modify the R files with the corresponding paths.
-Run the R file from the RStudio ( Expect significant processing time considering the volums of the involved data )
+Considering the size of data files being larger than 50MB, they are mot uploaded as part of this repository.
 
 ##Authors
 * Sandya Madhavan
