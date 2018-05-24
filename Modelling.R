@@ -70,20 +70,6 @@ step(ksvmOutput_1, data = inputData, direction = 'backward')
 step(lmModel_1, data = inputData, direction = 'backward') 
 
 
-#SVM for NPS_type
-#NB for NPS_type
-
-#Visualization
-
-#Scatter plot & Melt
-#Heat Map & Melt
-#Map Viz
-#Bar graph
-#Line graph
-
-
-
-
 #Determining the confusion matrix for the predicted model
 confMatrix<-confusionMatrix(goodtestData[,6],goodksvmPred[1,])
 confMatrix
