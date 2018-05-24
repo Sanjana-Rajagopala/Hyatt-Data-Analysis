@@ -1,16 +1,10 @@
 #######################Descriptive Statistics with aRules###################################
-#"All Suites_PL","Bell Staff_PL","Boutique_PL","Business Center_PL",
-#"Casino_PL","Conference_PL","Convention_PL","Dry-Cleaning_PL","Elevators_PL",
-#"Fitness Center_PL","Fitness Trainer_PL","Golf_PL","Indoor Corridors_PL",
-#"Laundry_PL","Limo Service_PL","Mini-Bar_PL","Pool-Indoor_PL","Pool-Outdoor_PL",
-#"Regency Grand Club_PL","Resort_PL","Restaurant_PL","Self-Parking_PL",
-#"Shuttle Service_PL","Ski_PL","Spa_PL","Spa services in fitness center_PL",
-#"Spa online booking_PL","Spa F&B offering_PL","Valet Parking_PL", "Country_PL"
 
 #What percentage had these present
 #Basic Amenities - Dry-Cleaning_PL,Elevators_PL,Indoor Corridors_PL,Laundry_PL,Restaurant_PL
 requiredRoomData <- data.frame(newJapan_condition_data_3_dec)
 View(requiredRoomData)
+
 requiredRoomData[,30] <- newJapan_condition_data_6_dec$newJapan_condition_data_4_dec
 
 satisfyFunction <- function(japan_condition_data_2_dec)
@@ -78,7 +72,7 @@ for(i in 1: nrow(requiredRoomData))
   }
 }
 totalspaBasic
-#
+
 
 SpaBasicPerc <- totalspaBasic/length(requiredRoomData$All.Suites_PL)
 SpaBasicPerc
@@ -158,8 +152,4 @@ goodrules_2 <- rulesset[quality(rulesset_2)$lift > 1.5]
 #Examining this ruleset
 inspect(goodrules_2)
 plot(goodrules_2)
-
-
-
-#Determining the 
 
